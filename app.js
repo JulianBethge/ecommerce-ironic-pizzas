@@ -12,13 +12,14 @@ app.set("view engine", "hbs"); //sets HBS as the template engine
 
 app.get("/", (req, res, next) => {
     console.log("this is the homepage");
-    res.sendFile(__dirname + '/views/index.html');
-
+    // res.sendFile(__dirname + '/views/index.html');
+    res.render("index");
 });
 
 app.get("/contact", (req, res, next) => {
     console.log("this is the contact page");
-    res.sendFile(__dirname + '/views/contact-page.html');
+    // res.sendFile(__dirname + '/views/contact-page.html');
+    res.render("contact-page")
 
 });
 
