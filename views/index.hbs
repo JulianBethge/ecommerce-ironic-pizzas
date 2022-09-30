@@ -2,5 +2,18 @@
     <h1>Welcome to Ironic Pizzas | Best pizza in the world</h1>
 
     <img class="full-width" src="/images/homepage-pizza.jpg" />
+
+<form action="/search" method="GET">
+
+    <h3>Search</h3>
+
+    <label>
+        Max Price:
+        <input type="number" name="maxPrice" min="1"/>
+    </label>
+
+
+    <button type="submit">Submit form</button>
+</form>
     
 {{> ctaOrderNow }}
